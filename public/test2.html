@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Test</title>
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/progressbar.css" />
+	
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+	<header class="row dark-back">
+		<div class="small-9 large-6 columns">
+			<h1>Ziele: Horst</h1>
+		</div>
+		<div class="hide-for-small large-3 columns">
+			<p class="">
+				5 Aktiver Ziele<br>
+				2 Inaktive Ziele
+			</p>
+		</div>
+		<div class="small-3 columns">
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+
+	</header>
+	<div class="row dark-back2">
+		<div class="small-2 large-1 column">
+			<a id="button-expand-ziel1"class="small button secondary" href="#"><!-- &#x25B2; -->&#x25BC;</a>
+		</div>
+		<div class="small-5 large-3 column">
+			<p class="bold ziel-titel">
+				100 Liegestüze							
+			</p>
+		</div>
+		<div class="small-2 large-5 column">
+			<button data-tooltip class="has-tip show-for-small secondary small" title="Ziel 1: 100 saubere Liegestütze in maximal 3 Minuten. Ohne hinlegen, Nase brührt den Boden ohne Kopf vorstrecken.">?</button>
+			<div class="objective-info-panel hide-for-small">
+				100 saubere Liegestütze in maximal 3 Minuten. Ohne hinlegen, Nase brührt den Boden ohne Kopf vorstrecken.
+			</div>
+		</div>
+		<div class="small-3 column">	
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+	</div>
+	<div id="values-ziel1" class="row hide odd-row">
+		
+		<div class="large-offset-1 large-3 small-7 column">
+			<span class="wert-beschreibung">Anzahl Liegtesütze in 3 Minuten.<br>Start 20 &raquo; 100 Ziel</span>
+		</div>
+
+		<div class="small-2 large-5 column">
+			<button data-tooltip class="has-tip show-for-small secondary small" title="Einheit: Wiederholungen;">?</button>
+			<div class="objective-info-panel hide-for-small">
+				Einheit: Wiederholungen
+			</div>
+		</div>
+
+		<div class="show-for-small small-3 column">	
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+
+		
+		<div class="large-3 column">
+			<div class="row collapse">
+				<form action="#">
+					<div class="small-8 column">
+						<input type="number" placeholder="Neuer Messwert">
+					</div>
+<!-- 					<div class="small-6 column">
+						<input id="date-picker" type="date">
+					</div>
+ -->					<div class="small-4 column">
+						<a id="submit-button" href="#" class="button prefix">Submit</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row dark-back2">
+		<div class="small-2 large-1 column">
+			<a id="button-expand-ziel2"class="small button secondary" href="#"><!-- &#x25B2; -->&#x25BC;</a>
+		</div>
+		<div class="small-5 large-3 column">
+			<p class="bold ziel-titel">
+				1-Arm-Klimmzug							
+			</p>
+		</div>
+		<div class="small-2 large-5 column">
+			<button data-tooltip class="has-tip show-for-small secondary small" title="1 einarmiger Klimmzug ohne Schwung.">?</button>
+			<div class="objective-info-panel hide-for-small">
+				1 einarmiger Klimmzug ohne Schwung.
+			</div>
+		</div>
+		<div class="small-3 column">	
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+	</div>
+	<div id="values-ziel2" class="hide">
+	<div class="row odd-row">
+		
+		<div class="large-offset-1 large-3 small-7 column">
+			<span class="wert-beschreibung">1-Arm-Klimmzug mit Hilfe<br>
+					Start 10 &raquo; 0 Ziel</span>
+		</div>
+
+		<div class="small-2 large-5 column">
+			<button data-tooltip class="has-tip show-for-small secondary small" title="Einheit: KG; Es zählt der Wert mit dem die Maschinge hilft so dass man gerade so eine Wiederholung schafft. 0 bedeutet 1AKZ ohne Hilfe.">?</button>
+			<div class="objective-info-panel hide-for-small">
+				Einheit: KG; Es zählt der Wert mit dem die Maschinge hilft so dass man gerade so eine Wiederholung schafft. 0 bedeutet 1AKZ ohne Hilfe.
+			</div>
+		</div>
+
+		<div class="show-for-small small-3 column">	
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+
+		
+		<div class="large-3 column">
+			<div class="row collapse">
+				<form action="#">
+					<div class="small-8 column">
+						<input type="number" placeholder="Neuer Messwert">
+					</div>
+<!-- 					<div class="small-6 column">
+						<input id="date-picker" type="date">
+					</div>
+ -->					<div class="small-4 column">
+						<a id="submit-button" href="#" class="button prefix">Submit</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><div class="row even-row">
+		
+		<div class="large-offset-1 large-3 small-7 column">
+			<span class="wert-beschreibung">2-Arm-Kreuzgriff-Klimmzug.<br> Start 40 &raquo; 50 Ziel</span>
+		</div>
+
+		<div class="small-2 large-5 column">
+			<button data-tooltip class="has-tip show-for-small secondary small" title="Einheit: KG; 1-Rep-Max weighted Pull-Up im Zwiegriff (Kommando-Klimmzug)">?</button>
+			<div class="objective-info-panel hide-for-small">
+				Einheit: KG; 1-Rep-Max weighted Pull-Up im Zwiegriff (Kommando-Klimmzug)
+			</div>
+		</div>
+
+		<div class="show-for-small small-3 column">	
+			<div class="progress-bar">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+
+		
+		<div class="large-3 column">
+			<div class="row collapse">
+				<form action="#">
+					<div class="small-8 column">
+						<input type="number" placeholder="Neuer Messwert">
+					</div>
+<!-- 					<div class="small-6 column">
+						<input id="date-picker" type="date">
+					</div>
+ -->					<div class="small-4 column">
+						<a id="submit-button" href="#" class="button prefix">Submit</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 
+	<div class="row dark-back2">
+		<div class="small-2 large-1 column">
+			<a id="button-expand-ziel2"class="small button secondary" href="#">&#x25BC;</a>
+		</div>
+		<div class="small-6 large-5 column">
+			<p data-tooltip class="has-tip2 bold ziel-titel" title="Ziel 2: 1 einarmiger Klimmzug ohne Schwung.">
+				1-Arm-Klimmzug						
+			</p>
+		</div>
+		<div class="small-4 large-6 column">	
+			<div class="progress-bar has-tip" data-tooltip title="Progress">
+				<div class="progress" id="pgbar"><span class="center" id="pgtext">50%</span></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="values-ziel2" class="hide">
+		<div class="row odd-row">
+			<div class="large-offset-1 large-5 column">
+				<span data-tooltip class="has-tip2 wert-beschreibung" title="Einheit: KG; Es zählt der Wert mit dem die Maschinge hilft so dass man gerade so eine Wiederholung schafft. 0 bedeutet 1AKZ ohne Hilfe.">1 einarmiger Klimmzug ohne Schwung.<br>
+					Start 10 &raquo; 0 Ziel</span>
+				</div>
+				<div class="large-6 column">
+					<div class="row collapse">
+						<form action="#">
+							<div class="small-6 column">
+								<input type="number" placeholder="Neuer Messwert">
+							</div>
+							<div class="small-4 column">
+								<input id="date-picker" type="date">
+							</div>
+							<div class="small-2 column">
+								<a id="submit-button" href="#" class="button prefix">Submit</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row even-row">
+				<div class="large-offset-1 large-5 column">
+					<span data-tooltip class="has-tip2 wert-beschreibung" title="Einheit: KG; 1-Rep-Max weighted Pull-Up im Zwiegriff (Kommando-Klimmzug)">2-Arm-Kreuzgriff-Klimmzug.<br> Start 40 &raquo; 50 Ziel</span>
+
+				</div>
+				<div class="large-6 column">
+					<div class="row collapse">
+						<form action="#">
+							<div class="small-6 column">
+								<input type="number" placeholder="Neuer Messwert">
+							</div>
+							<div class="small-4 column">
+								<input id="date-picker" type="date">
+							</div>
+							<div class="small-2 column">
+								<a id="submit-button" href="#" class="button prefix">Submit</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+ -->
+		<script>
+		document.write('<script src=' +
+			('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+			'.js><\/script>')
+		</script>
+
+		<script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+-->
+
+<script>
+$(document).foundation();
+</script>
+
+<script>
+
+$(document).ready( function() {
+	var now = new Date();
+	var month = (now.getMonth() + 1);               
+	var day = now.getDate();
+	if(month < 10) 
+		month = "0" + month;
+	if(day < 10) 
+		day = "0" + day;
+	var today = now.getFullYear() + '-' + month + '-' + day;
+	document.getElementById("date-picker").value = today;
+});
+
+$('#button-expand-ziel1').click( function( event ) 
+{
+	var value_div = $('#values-ziel1');
+	if( value_div.is(':hidden') )
+	{
+		event.target.innerHTML = '&#x25B2;';
+	}
+	else
+	{
+		event.target.innerHTML = '&#x25BC;';
+	}
+	$('#values-ziel1').toggle();
+});
+$('#button-expand-ziel2').click( function( event ) 
+{
+	var value_div = $('#values-ziel2');
+	if( value_div.is(':hidden') )
+	{
+		event.target.innerHTML = '&#x25B2;';
+	}
+	else
+	{
+		event.target.innerHTML = '&#x25BC;';
+	}
+	$('#values-ziel2').toggle();
+});
+
+$("#progress-value").keyup( function( event ) {
+	if (event.keyCode==13) 
+	{
+		var num = document.getElementById("progress-value").value;
+		if( num >= 0  && num < 101 ) 
+		{
+			updateProgressBar( num );
+		}
+	}
+	return false;
+});
+function updateProgressBar( percent )
+{
+	var percentstring = percent+"%";
+	$("#pgbar").css("width",percentstring);
+	$("#pgtext").html(percentstring);
+	document.getElementById("progress-tag").value = percent;
+	//$("#progress-tag").
+}
+</script>
+
+
+</body>
+</html>

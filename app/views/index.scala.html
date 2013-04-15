@@ -1,0 +1,59 @@
+@(message: String)
+
+@main("Mouse Click Game") {
+	<script type="text/javascript" src='@routes.Assets.at("javascripts/index.js")'>
+	</script>
+
+	<style type="text/css">
+	body {
+		background-color: rgb(38, 38, 38);
+	}
+
+	canvas {
+		border: 1px solid rgba(242, 198, 65, 0.1);
+		/*width: 100%;*/
+		/*height: 100%;*/
+		margin: 0;
+		/*margin: 50px auto 0 auto;*/
+		display: block;
+	}
+
+	.row {
+    	max-width: none;
+ 	}
+	</style>
+	<audio id="id-click-sound1" src='@routes.Assets.at("sound/click1.wav")' preload="auto"></audio>
+	<audio id="id-hit-sound1" src='@routes.Assets.at("sound/hit1.wav")' preload="auto"></audio>
+	<audio id="id-newtarget-sound1" src='@routes.Assets.at("sound/click2.wav")' preload="auto"></audio>
+
+	<div class="row">
+	<div class="large-2 column">
+		<label for="id-input-preset">Preset</label>
+		<select name="preset" id="id-input-preset">
+		  <option value="none">Custom</option>
+		  <option >Easy</option>
+		  <option >Medium</option>
+		  <option >Hard</option>
+		  <option >Insane</option>
+		</select>
+		<div id="id-custom">
+		<label for="id-input-width">Width</label>
+		<input id="id-input-width" name="width" value="500" disabled type="number" placeHolder="Width">
+		<label for="id-input-height">Height</label>
+		<input id="id-input-height" name="height" disabled value="400" type="number" placeHolder="height">
+		<label for="id-input-auto-size">Max Size</label>
+		<input id="id-input-auto-size" type="checkbox" checked name="auto-size" value="true">
+		<label for="id-input-targetnum">Number of Targets</label>
+		<input id="id-input-targetnum" name="targetnum" value="5" type="number" placeHolder="targetnum">
+		<label for="id-input-speed">Speed of Targets</label>
+		<input id="id-input-speed" name="targetspeed" value="0.2" type="number" placeHolder="Speed">
+		</div>
+		<label for="id-input-hardmod">Hardmod</label>
+		<input id="id-input-hardmod" type="checkbox" name="hardmod"><br>
+		<button id="id-button-create">Create Game</button>
+	</div>
+	<div class="large-10 column">
+	<canvas id="id-canvas" width="800" height="600"></canvas>
+	</div>
+</div>
+}

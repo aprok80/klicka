@@ -1,0 +1,15 @@
+@(names:List[String])
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/form.js")'></script>
+
+<ul>
+    @for(n <- names) {
+        <li>@n</li>
+    }
+</ul>
+
+<form action="@routes.Application.addText()" method="post">
+    <label for="1">Text</label>
+    <input id="1" type="text" name='name'/>
+    <input type="submit"/>
+</form>
